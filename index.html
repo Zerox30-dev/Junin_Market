@@ -3,143 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junin Market</title>
+    <title>Junin Market - Del Campo a Tu Mesa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Junin Market<br>Conectando con el Campo</h1>
-    <!-- Botones de descarga -->
-    <div class="app-stores">
-        <a href="#" class="store-btn" id="appStoreBtn">
-            <span>📱</span>
-            Ios
-        </a>
-        <a href="/path/to/your/app.apk" class="store-btn" id="playStoreBtn" download>
-            <span>🤖</span>
-            Android
-        </a>
-    </div>
-
-    <!-- Modal para App Store -->
-    <div id="comingSoonModal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <h2>¡Muy Pronto!</h2>
-            <p>Nuestra aplicación Tambien estará disponible en Iphone</p>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <!-- Inserta logo aquí -->
+                <img src="images/ico.png" alt="Junin Market Logo">
+            </div>
+            <h1>Junin Market</h1>
+            <p>Del Campo de Junín a Tu Mesa</p>
         </div>
-    </div>
-        
-        
-        <div class="slider">
-            <div class="slider-content">
-                <div class="slide" style="--i:0">
-                    <img src="images/foto1.jpg" alt="Productos frescos">
+
+        <button class="modo-oscuro-toggle" onclick="toggleModoOscuro()">
+            <i class="fas fa-moon"></i> Modo Oscuro
+        </button>
+    </header>
+
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider">
+    
+                <div class="slide" style="transform: rotateY(0deg) translateZ(500px);">
+              
+                    <img src="images/foto1.jpg" alt="Productos Frescos">
                     <div class="slide-content">
-                        <h2>Productos Frescos</h2>
-                        <p>Conectamos agricultores locales directamente con los consumidores</p>
+                        <h3>Productos Frescos</h3>
+                        <p>Directos del campo de Junín</p>
                     </div>
                 </div>
-                <div class="slide" style="--i:1">
+
+
+                <div class="slide" style="transform: rotateY(90deg) translateZ(500px);">
+      
+                    <img src="images/lacteos.jpg" alt="Lácteos">
+                    <div class="slide-content">
+                        <h3>Lácteos de Calidad</h3>
+                        <p>Producción local garantizada</p>
+                    </div>
+                </div>
+
+
+                <div class="slide" style="transform: rotateY(180deg) translateZ(500px);">
+
                     <img src="images/foto2.jpg" alt="Artesanías">
                     <div class="slide-content">
-                        <h2>Artesanías Únicas</h2>
-                        <p>Descubre el arte y la cultura de Junín</p>
+                        <h3>Artesanías Únicas</h3>
+                        <p>Arte de la región de Junín</p>
                     </div>
                 </div>
-                <div class="slide" style="--i:2">
-                    <img src="images/foto3.jpg" alt="Emprendedores">
-                    <div class="slide-content">
-                        <h2>Emprendedores Locales</h2>
-                        <p>Apoyando el crecimiento de pequeños negocios</p>
-                    </div>
-                </div>
-                <div class="slide" style="--i:3">
+
+
+                <div class="slide" style="transform: rotateY(270deg) translateZ(500px);">
+
                     <img src="images/foto4.jpg" alt="Delivery">
                     <div class="slide-content">
-                        <h2>Entrega a Domicilio</h2>
-                        <p>Del campo a tu mesa con un solo clic</p>
+                        <h3>Delivery</h3>
+                        <p>Del campo a tu mesa</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- Sección de características -->
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🌾</div>
-                <h3>Productos Certificados</h3>
-                <p>Garantizamos la calidad y origen de todos nuestros productos</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🚚</div>
-                <h3>Envío Rápido</h3>
-                <p>Entrega el mismo día en Junín y alrededores</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">💰</div>
-                <h3>Precios Justos</h3>
-                <p>Apoyo directo a productores locales sin intermediarios</p>
+    <section class="hero container">
+        <div class="hero-content">
+            <h2>Conectamos Productores con Consumidores</h2>
+            <p>Impulsamos la economía local de Junín, apoyando a nuestros agricultores y artesanos. Cada compra es un paso hacia el desarrollo sostenible de nuestra región.</p>
+            
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Descargar App</a>
+                <a href="#" class="btn btn-secondary">Conocer Más</a>
             </div>
         </div>
+    </section>
 
-        <!-- Sección de contadores -->
-        <div class="counter-section">
-            <div class="counter-item">
-                <div class="counter-number">1,000+</div>
-                <div class="counter-label">Productores Activos</div>
+    <section class="productos container">
+        <h2>Nuestros Productos</h2>
+        <p>Descubre la riqueza de la producción local de Junín</p>
+        
+        <div class="productos-grid">
+            <div class="producto-card">
+                <h3>Frutas y Verduras</h3>
+
+                <img src="images/foto1.jpg" alt="Frutas y Verduras">
+                <p>Productos frescos directamente de nuestros agricultores</p>
             </div>
-            <div class="counter-item">
-                <div class="counter-number">5,000+</div>
-                <div class="counter-label">Clientes Satisfechos</div>
+            
+            <div class="producto-card">
+                <h3>Emprendedores Locales</h3>
+
+                <img src="images/foto3.jpg" alt="Lácteos">
+                <p>Apoyando el crecimiento de pequeños Negocios</p>
             </div>
-            <div class="counter-item">
-                <div class="counter-number">10,000+</div>
-                <div class="counter-label">Entregas Realizadas</div>
+            
+            <div class="producto-card">
+                <h3>Artesanías</h3>
+
+                <img src="images/foto2.jpg" alt="Artesanías">
+                <p>Artesanías únicas que representan nuestra cultura</p>
             </div>
         </div>
+    </section>
 
-        <!-- Testimonios -->
-        <div class="testimonials">
-            <h2>Lo que dicen nuestros usuarios</h2>
-            <div class="testimonial-container">
-                <div class="testimonial active">
-                    <div class="rating">★★★★★</div>
-                    <p>"Gracias a Junin Market, puedo vender mis productos artesanales a más personas. ¡Ha cambiado mi negocio por completo!"</p>
-                    <cite>- María López, Artesana local</cite>
-                </div>
-                
-                <div class="testimonial">
-                    <div class="rating">★★★★★</div>
-                    <p>"Los productos son de excelente calidad y llegan siempre frescos. El servicio de entrega es muy puntual."</p>
-                    <cite>- Juan Pérez, Cliente frecuente</cite>
-                </div>
-                
-                <div class="testimonial">
-                    <div class="rating">★★★★★</div>
-                    <p>"Como agricultor, esta plataforma me ha permitido llegar a más clientes y obtener un precio justo por mis productos."</p>
-                    <cite>- Carlos Rodríguez, Agricultor</cite>
-                </div>
-                
-                <div class="testimonial">
-                    <div class="rating">★★★★★</div>
-                    <p>"La aplicación es muy fácil de usar y el servicio al cliente es excelente. ¡Totalmente recomendado!"</p>
-                    <cite>- Ana García, Cliente</cite>
-                </div>
-
-                <div class="testimonial">
-                    <div class="rating">★★★★★</div>
-                    <p>"He incrementado mis ventas en un 200% desde que empecé a usar Junin Market. Es una excelente plataforma."</p>
-                    <cite>- Pedro Martínez, Vendedor local</cite>
-                </div>
+    <section class="funcionalidades container">
+        <h2>Funcionalidades de la App</h2>
+        <p>Simplificamos la conexión entre productores y consumidores</p>
+        
+        <div class="funcionalidades-grid">
+            <div class="funcionalidad-card">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>Comercialización Directa</h3>
+                <p>Compra directamente de los productores locales</p>
             </div>
-            <div class="testimonial-indicators"></div>
+            
+            <div class="funcionalidad-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Trazabilidad</h3>
+                <p>Conoce el origen de cada producto</p>
+            </div>
+            
+            <div class="funcionalidad-card">
+                <i class="fas fa-user-circle"></i>
+                <h3>Perfiles de Productores</h3>
+                <p>Conoce la historia detrás de cada producto</p>
+            </div>
         </div>
+    </section>
 
-    
-    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Junin Market. Todos los derechos reservados.</p>    
+        </div>
+    </footer>
 
-    <script src="script.js"></script>
+
+    <script>
+        function toggleModoOscuro() {
+            document.body.classList.toggle('modo-oscuro');
+            const toggleButton = document.querySelector('.modo-oscuro-toggle');
+            
+            if (document.body.classList.contains('modo-oscuro')) {
+                toggleButton.innerHTML = '<i class="fas fa-sun"></i> Modo Claro';
+                localStorage.setItem('modo-oscuro', 'activado');
+            } else {
+                toggleButton.innerHTML = '<i class="fas fa-moon"></i> Modo Oscuro';
+                localStorage.removeItem('modo-oscuro');
+            }
+        }
+
+
+        document.addEventListener('DOMContentLoaded', () => {
+            if (localStorage.getItem('modo-oscuro') === 'activado') {
+                document.body.classList.add('modo-oscuro');
+                document.querySelector('.modo-oscuro-toggle').innerHTML = '<i class="fas fa-sun"></i> Modo Claro';
+            }
+        });
+    </script>
 </body>
 </html>
